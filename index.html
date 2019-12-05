@@ -1,10 +1,14 @@
-<style>body{ 
+<style>
+ body{ 
 	font: normal 13px/20px Arial, Helvetica, sans-serif; word-wrap:break-word;
 	color: #fff;
-	background: #ddd;
+	background: #fff;
 }
+ #countdown_frame {
+    
+  }
 #countdown, #countdown_powerbank{
-	width: 665px;
+	width: 95%;
 	height: 112px;
 	text-align: center;
 	background: #222;
@@ -78,6 +82,7 @@
 	padding: 18px 0;
 	display: inline-block;
 	position: relative;
+  margin-bottom:100px;
 }
 
 #countdown #tiles > span:before, #countdown_powerbank #tiles_powerbank > span:before{
@@ -122,17 +127,19 @@
 	text-align: center;
 	text-transform: uppercase;
 	display: inline-block;
+  margin-bottom:20px;
 }
 </style>
-
-<div id="countdown">
-  <div id='tiles'></div>
-  <div class="labels">
-    <li>Подарков</li>
-    <li>Дней</li>
-    <li>часов</li>
-    <li>минут</li>
-    <li>секунд</li>
+<div id="countdown_frame">
+  <div id="countdown">
+    <div id='tiles'></div>
+    <div class="labels">
+      <li>Подарков</li>
+      <li>Дней</li>
+      <li>часов</li>
+      <li>минут</li>
+      <li>секунд</li>
+    </div>
   </div>
 </div>
 
